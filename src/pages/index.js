@@ -7,24 +7,17 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+function AvatarHeader() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+      <div class="hero hero--dark">
+        <div class="container">
+          <h1 class="hero__title">Hi There!</h1>
+          <p class="hero__subtitle">My name's Thomas and I make stuff!</p>
+          <div>
+            <img src="/static/img/20230914_225904.jpg"/>
+          </div>
         </div>
       </div>
-    </header>
   );
 }
 
@@ -34,7 +27,7 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="The portfolio website of Thomas Dalgetty">
-      <HomepageHeader />
+        <AvatarHeader></AvatarHeader>
       <main>
         <HomepageFeatures />
       </main>
