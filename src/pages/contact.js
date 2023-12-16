@@ -1,0 +1,38 @@
+import React from 'react';
+import Layout from '@theme/Layout';
+
+export default function Hello() {
+  return (
+    <Layout title="Contact" description="Fill out the form to send an email my way!">
+        <div class="hero hero-primary margin-top--md">
+            <div class="container">
+                <h1 class="hero__title">Contact Me!</h1>
+                <p class="hero__subtitle">Fill out the form below and I'll get back to you as soon as I can!</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form action="https://api.dalgetty.dev/mail" method="POST">
+                        <div class="contact-form margin--md padding--md">
+                            <div class="email-input margin-top--sm margin-left--sm">
+                                <input class="shadow--tl" type="text" id="email" name="email" placeholder="Email" required/> 
+                            </div>
+                            <div class="subject-input margin-top--sm margin-left--sm">
+                                <input class="shadow--tl" type="text" id="subject" name="subject" placeholder="Subject" required/> 
+                            </div>
+                            <div class="message-input margin-top--sm margin-left--sm">
+                                <textarea class="shadow--tl" name="body" placeholder="Message" rows="10" required/> 
+                            </div>
+                            <div>
+                                <button className="button button--primary margin--sm">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </Layout>
+  );
+}
