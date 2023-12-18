@@ -13,15 +13,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://www.dalgetty.dev/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  //organizationName: 'facebook', // Usually your GitHub org/user name.
+  //projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -63,7 +63,7 @@ const config = {
         title: '',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/icons8-home.svg',
         },
         items: [
           {to: '/blog', label: 'Posts', position: 'left'},
@@ -73,6 +73,19 @@ const config = {
       footer: {
         style: 'dark',
         links: [
+          {
+            title: 'Acknowledgements',
+            items: [
+              {
+                label: 'Home icon by Icons8',
+                href: 'https://www.Icons8.com',
+              },
+              {
+                label: 'Github Cards',
+                href: 'https://gh-card.dev/',
+              }
+            ]
+          },
           {
             title: 'My Links',
             items: [
