@@ -17,7 +17,7 @@ export default function Hello() {
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <form action="http://localhost:5000/mail" method="POST" id="contact-form">
+                    <form action="https://api.dalgetty.dev/mail" method="POST" id="contact-form">
                         <div class="contact-form margin--md padding--md">
                             <div class="email-input margin-top--sm margin-left--sm">
                                 <input class="shadow--tl" type="text" id="email" name="email" placeholder="Email" required/> 
